@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #f7f7f7;
+    max-width: 900px;
+    display: grid;
+    grid-template-areas:
+    "video-principal propaganda "
+    "video-principal recomendados";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+    gap: 20px;
+    padding: 38px 35px;
+}
+
+.video-principal {
+    grid-area: video-principal;
+}
+
+.video-principal img {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.video-principal .titulo{
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.video-principal .visualizacoes {
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+
+.video-principal .descricao {
+    font-size: 16px;
+}
+
+.propaganda {
+    grid-area: propaganda;
+}
+
+.recomendados {
+    grid-area: recomendados;
+}
+
+.recomendados .videos {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.recomendados .videos .titulo {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.recomendados .videos p {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.video-principal {
+    font-size: 15px;
+}
